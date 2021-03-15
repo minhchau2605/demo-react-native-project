@@ -7,10 +7,11 @@
  */
 
 import React from 'react';
-import SplashScreen from './src/screens/SplashScreen.js';
+import AppStackNavigator from './src/components/AppStackNavigator';
+import WelcomeScreen from './src/screens/WelcomeScreen';
 
 const App: () => React$Node = () => {
-  return <SplashScreen />;
+  return <WelcomeScreen />;
 };
 
 export default App;
