@@ -10,12 +10,10 @@ export default function SplashScreen(navigation) {
       <ImageBackground
         source={require('../assets/images/bg.png')}
         style={styles.background}>
-        <View style={styles.logoView}>
-          <Image
-            source={require('../assets/images/logo.png')}
-            style={styles.logo}
-          />
-        </View>
+        <Image
+          source={require('../assets/images/logo.png')}
+          style={styles.logo}
+        />
       </ImageBackground>
     </View>
   );
@@ -29,9 +27,6 @@ const styles = StyleSheet.create({
   background: {
     flex: 1,
     resizeMode: 'cover',
-    justifyContent: 'center',
-  },
-  logoView: {
     justifyContent: 'center',
     alignItems: 'center',
   },

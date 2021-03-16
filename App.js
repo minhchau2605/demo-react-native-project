@@ -9,9 +9,10 @@
 import React from 'react';
 import AppStackNavigator from './src/components/AppStackNavigator';
 import WelcomeScreen from './src/screens/WelcomeScreen';
+import SplashScreen from './src/screens/SplashScreen';
 
 const App: () => React$Node = () => {
-  return <WelcomeScreen />;
+  return <SplashScreen />;
 };
 
 export default App;
