@@ -8,8 +8,10 @@ export default class ChildA extends React.Component {
   render() {
     return (
       <View style={styles.sectionContainer}>
-        <TouchableOpacity onPress={() => this.props.onPress()}>
-          <Text>Click Me !</Text>
+        <TouchableOpacity
+          style={styles.btnA}
+          onPress={() => this.props.onPress()}>
+          <Text>Click!</Text>
         </TouchableOpacity>
       </View>
     );
@@ -21,5 +23,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  btnA: {
+    backgroundColor: 'blue',
   },
 });
